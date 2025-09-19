@@ -1,0 +1,49 @@
+.apresentacao {
+    text-align: center;
+    padding: 20px;
+}
+
+.relogio{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 25px; /* Espaço entre as caixas */
+    margin-top: 20px;
+}
+
+.unidade-tempo {
+    display: flex;
+    flex-direction: column; /* Coloca o texto em cima do número */
+    align-items: center;   /* Centraliza o texto em relação à caixa */
+    font-size: 1.2rem;     /* Tamanho da fonte para "Dias", "Horas"... */
+}
+
+.unidade-tempo span:first-child {
+    margin-bottom: 10px; /* Espaço entre o texto e a caixa */
+}
+
+.tempo {
+    background-color: #412450; 
+    color: #b635e1;
+    display: flex; /* Usamos flex para centralizar o número dentro da caixa */
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    font-size: 3rem; 
+    font-weight: bold; 
+    text-shadow: 0 0 10px #000000;
+    padding: 15px;
+    min-width: 80px; /* Garante que todas as caixas tenham o mesmo tamanho */
+}
+
+.separador{
+    animation: piscar 1s step-end infinite;
+    font-size: 4rem;
+}
+
+@keyframes piscar{
+    50%{
+        opacity: 0;
+    }
+}

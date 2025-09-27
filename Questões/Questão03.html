@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão03.css">
 </head>
 <body>
     <header>
@@ -25,12 +26,27 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="apresentacao">
+            <h2>Tabuada</h2>
+            <div class="">
+                <form id="tabuada-form">
+                    <div class="input-group">
+                        <label for="Numero"> insira o numero que você deseja a tabuada:</label>
+                        <input type="number" name="numero" id="number" placeholder="Numero de 1 a 9" >
+                    </div>
+                    <button type="button" id="gerarTabuadaBtn">Gerar tabuada</button>
+                </form>
+
+                <div id="tabuadaResultado">
+                    <p>Sua tabuada aparecerá aqui.</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>
     </footer>
+
+    <script src="../scripts/resolução03.js"></script>
 </body>
 </html>

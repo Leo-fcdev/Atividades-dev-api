@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão04.css">
 </head>
 <body>
     <header>
@@ -25,12 +26,32 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="apresentacao">
+            <form id="validation-form" novalidate >
+                <div class="input-group">
+                    <label for="Nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o primeiro nome:" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                   <small class="error-message"></small>
+                </div>
+                <div class="input-group">
+                    <label for="Senha">Senha:</label>
+                    <input type="password" id="senha"name="senha" placeholder="Minimo de 6 caracteres" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit" id="submit-btn">Entrar</button>
+            </form>
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>
     </footer>
+
+    <script src="../scripts/resolução04.js"></script>
 </body>
 </html>

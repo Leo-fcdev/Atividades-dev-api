@@ -1,0 +1,82 @@
+/* Você pode criar um arquivo validador.css e linká-lo */
+
+/* Estilos gerais para o formulário dentro do card */
+#validation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os campos */
+}
+
+#validation-form .input-group {
+    text-align: left;
+    position: relative; /* Necessário para a mensagem de erro */
+}
+
+/* Reutilizando estilos que você já tem */
+#validation-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+#validation-form input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#validation-form input:focus {
+    outline: none;
+    border-color: #75007a;
+}
+
+/* === A MÁGICA DA VALIDAÇÃO VISUAL === */
+
+/* Estilo para a mensagem de erro */
+.input-group .error-message {
+    color: #e74c3c; /* Vermelho */
+    font-size: 0.8rem;
+    margin-top: 5px;
+    visibility: hidden; /* Escondida por padrão */
+    height: 15px;
+}
+
+/* Quando o input-group tiver a classe .error */
+.input-group.error .error-message {
+    visibility: visible; /* Mostra a mensagem de erro */
+}
+
+.input-group.error input {
+    border-color: #e74c3c; /* Borda vermelha */
+    background-color: #fbecec;
+}
+
+/* Quando o input-group tiver a classe .success */
+.input-group.success input {
+    border-color: #2ecc71; /* Borda verde */
+}
+/* Estilo para o botão de submit do formulário */
+
+#submit-btn {
+    width: 100%; /* Ocupa a largura total do container */
+    padding: 15px;
+    margin-top: 15px; /* Espaço acima do botão */
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(#75007a, #310046); /* Mesmo gradiente dos outros botões */
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#submit-btn:hover {
+    transform: translateY(-2px); /* Efeito de "levantar" ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

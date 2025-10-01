@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão05.css">
 </head>
 <body>
     <header>
@@ -25,12 +26,39 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="apresentacao">
+            <h2>Analisador de Números</h2>
+            <p>Digite ou cole números separados por vírgula e clique em analisar.</p>
+
+            <div class="input-group">
+                <label for="numerosInput">Números:</label>
+                <textarea id="numerosInput" rows="1" placeholder="Ex: 15, 8, 90, 23, 41, 2, 9"></textarea>
+            </div>
+
+            <button id="analisarBtn">Analisar</button>
+
+            <div id="resultadoAnalise">
+                <div class="resultados-container">
+                    <div class="resultado-box">
+                        <h4>Menor Número</h4>
+                        <span id="menorValor">-</span>
+                    </div>
+                    <div class="resultado-box">
+                        <h4>Maior Número</h4>
+                        <span id="maiorValor">-</span>
+                    </div>
+                    <div class="resultado-box">
+                        <h4>Média</h4>
+                        <span id="mediaValor">-</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>
     </footer>
+    <script src="../scripts/resolução05.js"></script>
 </body>
 </html>

@@ -1,0 +1,94 @@
+/* Styles/analisador.css */
+
+/* Estilos para o container principal (reutilizando a classe .apresentacao) */
+.apresentacao {
+    max-width: 600px;
+    text-align: center;
+}
+
+.apresentacao p {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o grupo de input e textarea */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Estilo para a área de texto */
+#numerosInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit; /* Usa a mesma fonte do resto da página */
+    box-sizing: border-box;
+    resize: vertical; /* Permite que o usuário redimensione a altura */
+    min-height: 100px;
+}
+
+#numerosInput:focus {
+    outline: none;
+    border-color: #75007a;
+}
+
+/* Estilo para o botão (consistente com seus outros projetos) */
+#analisarBtn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(#75007a, #310046);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#analisarBtn:hover {
+    transform: translateY(-2px);
+}
+
+/* --- Estilos para a Área de Resultados --- */
+
+#resultadoAnalise {
+    margin-top: 30px;
+}
+
+.resultados-container {
+    display: flex; /* A mágica para alinhar lado a lado */
+    justify-content: space-between;
+    gap: 20px; /* Espaço entre as caixas */
+}
+
+.resultado-box {
+    flex: 1; /* Faz cada caixa ocupar o mesmo espaço */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.resultado-box h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.resultado-box span {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #310046; /* Cor roxa para destaque */
+}

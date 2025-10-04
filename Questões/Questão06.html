@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão06.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -25,12 +28,32 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="apresentacao">
+            <h2>Conversor de temperatura</h2>
+            <p>A temperatura da sua localização será exibida abaixo.</p>
+
+            <div class="clima-container">
+                <h3 id="cidade">Buscando sua localização...</h3>
+                <div class="temperatura-atual">
+                    <span id="temp-celsius">--</span>
+                    <span>°C</span>
+                </div>
+                <p id="descricao-clima"></p>
+            </div>
+
+            <button id="converterBtn">Converter para Fahrenheit</button>
+
+            <div class="resultado-conversao">
+                <p>Resultado:</p>
+                <span id="temp-fahrenheit">-- °F</span>
+            </div>
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>
     </footer>
+
+    <script src="../scripts/resolução06.js"></script>
 </body>
+
 </html>

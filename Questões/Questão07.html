@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão07.css">
 </head>
 <body>
     <header>
@@ -25,12 +26,35 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="apresentacao">
+            <h2>Contador de Vogais e Consoantes</h2>
+            <p>Digite uma palavra abaixo e clique em "Contar".</p>
+
+            <form class="input-group">
+                <label for="textInput">Sua palavra:</label>
+                <input type="text" id="textInput" placeholder="EX: Paralelepipedo">
+            </form>
+
+            <button id="contarBtn">Contar</button>
+
+            <div id="resultadoContador">
+                <div class="resultado-Conteiner">
+                    <div class="resultado-box">
+                        <h4>Vogais</h4>
+                        <span id="vogaisTotal">0</span>
+                    </div>
+                    <div class="resultado-box">
+                        <h4>Consoantes</h4>
+                        <span id="consoantesTotal">0</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>
     </footer>
+
+    <script src="../scripts/resolução07.js"></script>
 </body>
 </html>

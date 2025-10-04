@@ -1,0 +1,80 @@
+/* Styles/contador.css */
+
+.apresentacao {
+    max-width: 600px;
+    text-align: center;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+#textInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#textoInput:focus {
+    outline: none;
+    border-color: #75007a;
+}
+
+#contarBtn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(#75007a, #310046);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#contarBtn:hover {
+    transform: translateY(-2px);
+}
+
+/* --- Estilos para a Área de Resultados (Idênticos ao projeto anterior) --- */
+#resultadoContador {
+    margin-top: 30px;
+}
+
+.resultados-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.resultado-box {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.resultado-box h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.resultado-box span {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #310046;
+}

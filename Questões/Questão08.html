@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão08.css">
 </head>
 <body>
     <header>
@@ -25,12 +26,27 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="apresentacao">
+            <h2>Gerador de Cupons</h2>
+            <p>Defina o tamanho e gere um cupom alfanumérico.</p>
+
+            <form class="input-group">
+                <label for="tamanhoCupom">Tamanho do Cupom:</label>
+                <input type="number" id="tamanhoCupom" value="8" min="1">
+            </form>
+
+            <button id="gerarBtn">Gerar Cupom</button>
+
+            <div class="resultado-conteiner">
+                <h4>Seu Cupom:</h4>
+                <div id="cupomGerado">Clique no botão para gerar</div>
+            </div>
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>
     </footer>
+
+    <script src="../scripts/resolução08.js"></script>
 </body>
 </html>

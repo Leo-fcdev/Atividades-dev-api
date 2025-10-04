@@ -1,0 +1,63 @@
+/* Styles/conversor-clima.css */
+
+.apresentacao {
+    max-width: 500px;
+    text-align: center;
+}
+
+.clima-container {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+}
+
+#cidade {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.temperatura-atual {
+    margin-bottom: 10px;
+}
+
+.temperatura-atual span {
+    font-size: 4rem; /* Tamanho bem grande para a temperatura */
+    font-weight: bold;
+    color: #310046;
+}
+
+#descricao-clima {
+    font-style: italic;
+    color: #666;
+    text-transform: capitalize; /* Deixa a primeira letra maiúscula */
+}
+
+#converterBtn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(#75007a, #310046);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#converterBtn:hover {
+    transform: translateY(-2px);
+}
+
+.resultado-conversao {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.resultado-conversao span {
+    font-weight: bold;
+    color: #310046;
+}

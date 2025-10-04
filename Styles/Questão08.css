@@ -1,0 +1,49 @@
+/* Adicione a um arquivo .css separado */
+
+.apresentacao {
+    max-width: 500px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    /* ... estilos de label e input que você já tem ... */
+}
+
+#gerarBtn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(#75007a, #310046);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#gerarBtn:hover {
+    transform: translateY(-2px);
+}
+
+.resultado-container {
+    margin-top: 30px;
+}
+
+.resultado-container h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#cupomGerado {
+    background-color: #f4f4f4;
+    border: 2px dashed #75007a;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #310046;
+    letter-spacing: 2px; /* Espaçamento entre as letras */
+    font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada para cara de código */
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão09.css">
 </head>
 <body>
     <header>
@@ -25,9 +26,24 @@
         </nav>
     </header>
     <main>
-        <div>
+        <div class="apresentacao">
+            <h2>Localizador de Maior Palavra</h2>
+            <p>Digite uma frase no campo abaixo e descubra qual é a maior palavra</p>
             
+            <form class="input-group">
+                <label for="fraseInput">Sua frase:</label>
+                <textarea name="frase" id="fraseInput" placeholder="Ex: Olá, mundo!" rows="1"></textarea>
+            </form>
+
+            <button id="encontrarBtn">Encontrar Maior Palavra</button>
+
+            <div class="resultado-container">
+                <h4>A maior palavra é:</h4>
+                <div id="resultadoMaiorPalavra">...</div>
+            </div>
         </div>
+
+        <script src="../scripts/resolução09.js"></script>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>

@@ -1,0 +1,75 @@
+/* Styles/localizador-palavra.css */
+
+.apresentacao {
+    max-width: 600px;
+    text-align: center;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+textarea#fraseInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+}
+
+textarea#fraseInput:focus {
+    outline: none;
+    border-color: #75007a;
+}
+
+#encontrarBtn {
+    /* Reutilize o estilo do botão roxo que você já tem */
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(#75007a, #310046);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#encontrarBtn:hover {
+    transform: translateY(-2px);
+}
+
+.resultado-container {
+    margin-top: 30px;
+}
+
+.resultado-container h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#resultadoMaiorPalavra {
+    background-color: #f4f4f4;
+    border: 2px solid #75007a;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #310046;
+    min-height: 70px; /* Garante uma altura mínima */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

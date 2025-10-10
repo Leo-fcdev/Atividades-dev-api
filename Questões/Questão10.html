@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <link rel="stylesheet" href="../Styles/Style.css">
+    <link rel="stylesheet" href="../Styles/Questão10.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -25,12 +28,34 @@
         </nav>
     </header>
     <main>
-        <div>
-            
+        <div class="apresentacao">
+            <h2>Sorteador de Times</h2>
+            <p>Insira os nomes dos participantes (um por linha) e defina em quantos times eles serão divididos.</p>
+
+            <div class="configuracoes-container">
+                <div class="input-group">
+                    <label for="nomesInput">Nomes dos Participantes:</label>
+                    <textarea name="nome" id="nomesInput" rows="8"
+                        placeholder="Ana&#10;Carlos&#10;Beatriz&#10;Daniel..."></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="numeroTimesInput">Número de Times:</label>
+                    <input type="number" id="numeroTimesInput" value="2" min="2">
+                </div>
+            </div>
+
+            <button id="sortearBtn">Sortear Times</button>
+
+            <div id="timesSorteadosContainer" class="resultados-container"></div>
+
         </div>
+
+        <script src="../scripts/resolução10.js"></script>
     </main>
     <footer>
         <p>Desenvolvido por Leonardo</p>
     </footer>
 </body>
+
 </html>
